@@ -27,7 +27,7 @@ jobs:
       run: pnpm install
       
     - name: 打包
-      run: pnpm run docs:build
+      run: pnpm run build
       
     - name: 部署到Pages
       uses: JamesIves/github-pages-deploy-action@v4
