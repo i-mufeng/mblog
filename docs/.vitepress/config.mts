@@ -30,8 +30,8 @@ export default defineConfig({
         logo: '/logo.svg',
         editLink: {
           pattern:
-            'https://github.com/i-mufeng/mblog/master/docs/:path',
-          text: '去 GitHub 上编辑'
+            'https://github.com/i-mufeng/mblog/tree/master/docs/:path',
+          text: 'Edit On GitHub'
         },
         nav: [
             {text: '首页', link: '/'},
