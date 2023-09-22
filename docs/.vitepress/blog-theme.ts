@@ -31,6 +31,12 @@ const blogTheme = getThemeConfig({
   // 文章默认作者
   author: '沐风',
 
+  comment: {
+    repo: 'i-mufeng/mblog',
+    repoId: 'R_kgDOKW0QNw',
+    category: 'General',
+    categoryId: 'DIC_kwDOKW0QN84CZimX'
+  }
   // // 友链
   // friend: [
   //   {

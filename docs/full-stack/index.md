@@ -1,7 +1,9 @@
 ---
+categories: 
+   - 工具分享
 tags: 
-  - Linux
-  - 运维
+   - Linux
+   - 运维
 ---
 
 # 泛域名证书申请以及部署
