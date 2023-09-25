@@ -11,4 +11,4 @@ author: false
 
 ## 1、建站笔记
 
-1. [使用 `acme.sh` 部署泛域名证书]("./web/acme-sh/")
+1. [使用 `acme.sh` 部署泛域名证书]("./web/acme-sh")
