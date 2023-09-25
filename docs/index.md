@@ -10,4 +10,6 @@ blog:
  # 设置 inspiringTimeout 可以实现自动切换
  inspiringTimeout: 6000
  pageSize: 5
+ author: MuFeng
+ logo: https://cn.gravatar.com/avatar/f1dcdc8fa782b81824df5d67022e4d4a?s=100
 ---

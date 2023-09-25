@@ -36,16 +36,28 @@ const blogTheme = getThemeConfig({
     repoId: 'R_kgDOKW0QNw',
     category: 'General',
     categoryId: 'DIC_kwDOKW0QN84CZimX'
-  }
-  // // 友链
-  // friend: [
-  //   {
-  //     nickname: '粥里有勺糖',
-  //     des: '你的指尖用于改变世界的力量',
-  //     avatar:
-  //       'https://img.cdn.sugarat.top/mdImg/MTY3NDk5NTE2NzAzMA==674995167030',
-  //     url: 'https://sugarat.top',
-  //   },
+  },
+  footer: {
+    copyright: `Mblog © 2021-2023 Created by 沐风`,
+    icpRecord: {
+      name: '陇ICP备2021003158号-1',
+      link: 'https://beian.miit.gov.cn/'
+    },
+    securityRecord: {
+      name: '渝公网安备 50011802010624号',
+      link: 'https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50011802010624'
+    }
+  },
+  // 友链
+  friend: [
+    {
+      nickname: '粥里有勺糖',
+      des: '你的指尖用于改变世界的力量',
+      avatar:
+        'https://img.cdn.sugarat.top/mdImg/MTY3NDk5NTE2NzAzMA==674995167030',
+      url: 'https://sugarat.top',
+    },
+  ],
   //   {
   //     nickname: 'Vitepress',
   //     des: 'Vite & Vue Powered Static Site Generator',
@@ -55,7 +67,6 @@ const blogTheme = getThemeConfig({
   //   },
   // ],
 
-  // 公告
   // popover: {
   //   title: '公告',
   //   body: [
