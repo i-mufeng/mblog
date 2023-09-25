@@ -16,6 +16,6 @@ common: false
 
 ### 1、 LAMP 架构三部曲
 
-1. [ 第一步 编译安装httpd服务器 ](./linux-lamp/first)
-2. [ 第二步 编译安装mariadb数据库环境](./linux-lamp/second)
-3. [ 第三步 编译安装PHP ](./linux-lamp/third)
+1. [ 第一步 编译安装httpd服务器 ](./linux-lamp/first.md)
+2. [ 第二步 编译安装mariadb数据库环境](./linux-lamp/second.md)
+3. [ 第三步 编译安装PHP ](./linux-lamp/third.md)
