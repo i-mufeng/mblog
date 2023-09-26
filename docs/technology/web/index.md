@@ -7,5 +7,5 @@ author: false
 
 ## 目录
 
-1. [使用 `acme.sh` 部署泛域名证书](./web/acme-sh.md)
+1. [使用 `acme.sh` 部署泛域名证书](./acme-sh.md)
 
