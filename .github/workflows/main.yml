@@ -20,7 +20,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         
-    - name: 安装pnpm
+    - name: 安装 pnpm
       run: npm install pnpm -g
       
     - name: 安装依赖
@@ -28,8 +28,11 @@ jobs:
       
     - name: 打包
       run: pnpm run build
+
+    - name: 构建 pagefind 索引
+      run: npx pagefind --source docs/.vitepress/dist
       
-    - name: 部署到Pages
+    - name: 部署到 Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with: 
         repository-name: i-mufeng/i-mufeng.github.io
