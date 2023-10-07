@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.1.0",
-    "@sugarat/theme": "^0.2.1",
+    "@sugarat/theme": "^0.2.6",
     "element-plus": "^2.3.14",
     "pagefind": "^1.0.3",
     "vitepress-plugin-pagefind": "^0.2.10",
@@ -21,7 +21,7 @@
   "devDependencies": {
     "sass": "^1.68.0",
     "typescript": "^5.2.2",
-    "vitepress": "1.0.0-rc.15"
+    "vitepress": "1.0.0-rc.20"
   },
   "author": "沐风",
   "license": "MIT"

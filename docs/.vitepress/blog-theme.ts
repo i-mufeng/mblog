@@ -26,7 +26,7 @@ const blogTheme = getThemeConfig({
   // search: false,
 
   // 主题色修改
-  themeColor: 'el-blue',
+  themeColor: 'vp-green',
 
   // 文章默认作者
   author: '沐风',
@@ -38,7 +38,7 @@ const blogTheme = getThemeConfig({
     categoryId: 'DIC_kwDOKW0QN84CZimX'
   },
   footer: {
-    copyright: `Mblog © 2021-2023 Created by 沐风`,
+    message: `Mblog © 2021-2023 Created by 沐风`,
     icpRecord: {
       name: '陇ICP备2021003158号-1',
       link: 'https://beian.miit.gov.cn/'

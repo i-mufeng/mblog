@@ -4,7 +4,7 @@ tags:
   - 架构
   - 运维
   - LAMP
-categoryL: Linux 运维
+category: Linux 运维
 
 ---
 

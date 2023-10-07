@@ -44,6 +44,7 @@ export default defineConfig({
                 ],
             },
             {text: '杂谈随笔', link: '/tittle-tattle/'},
+            {text: '每日一题', link: '/question-by-day/'},
             {text: '友链', link: '/friend-link-list/'},
             {text: '关于本站', link: '/about/'},
         ],

@@ -7,9 +7,11 @@ tags:
 category: Linux 运维
 ---
 
+
 # 第一步 编译安装httpd服务器
 
-# 1、安装前准备
+
+## 1、安装前准备
 
 解压apr apr-util pcre httpd expat包
 
@@ -30,7 +32,7 @@ apr-1.6.5  apr-util-1.6.1  httpd-2.4.46  packages  pcre-8.42
 [root@localhost apr-1.6.5]# dnf -y install gcc gcc-c++ make cmake gdb libstdc++* 
 ```
 
-# 2、编译安装apr
+## 2、编译安装apr
 
 ```
 [root@localhost apr-1.6.5]# pwd
@@ -54,7 +56,7 @@ rm: cannot remove 'libtoolT': No such file or directory
 #把RM='$RM'改为RM='$RM  -f'
 ```
 
-# 3、编译安装expat
+## 3、编译安装expat
 
 ```
 [root@localhost expat-2.2.3]# pwd
@@ -63,7 +65,7 @@ rm: cannot remove 'libtoolT': No such file or directory
 make && make install
 ```
 
-# 4、编译安装apr-util
+## 4、编译安装apr-util
 
 ```
 [root@localhost apr-util-1.6.1]# pwd
@@ -72,7 +74,7 @@ make && make install
 make && make install
 ```
 
-# 5、编译安装pcre
+## 5、编译安装pcre
 
 ```
 [root@localhost pcre-8.42]# pwd
@@ -81,7 +83,7 @@ make && make install
 [root@localhost pcre-8.42]# make && make install
 ```
 
-# 6、编译安装httpd
+## 6、编译安装httpd
 
 ```
 [root@localhost httpd-2.4.46]# pwd
@@ -106,7 +108,7 @@ make && make install
 >
 > 错误日志： /usr/local/apache/log/error_log
 
-# 7、selinux配置
+## 7、selinux配置
 
 ```
 [root@localhost httpd-2.4.46]# getsebool -a | grep httpd
@@ -164,7 +166,7 @@ httpd_verify_dns --> off
 [root@localhost httpd-2.4.46]# setsebool -P httpd_enable_cgi  on
 ```
 
-# 8、防火墙配置
+## 8、防火墙配置
 
 ```
 [root@localhost httpd-2.4.46]# firewall-cmd  --add-port=80/tcp --permanent 
@@ -183,7 +185,7 @@ success
 success
 ```
 
-# 9、修改主配置文件httpd.conf
+## 9、修改主配置文件httpd.conf
 
 ```
 [root@localhost conf]# pwd
@@ -228,20 +230,20 @@ ServerName www.mufeng.com:80	#站点名称
 >
 > Include：需要包含进来的其他配置文件
 
-# 10、http.conf 语法检查
+## 10、http.conf 语法检查
 
 ```
 [root@localhost conf]# /usr/local/apache/bin/apachectl  -t
 Syntax OK
 ```
 
-# 11、启动httpd服务
+## 11、启动httpd服务
 
 ```
 [root@localhost conf]# /usr/local/apache/bin/apachectl start 
 ```
 
-# 12、测试
+## 12、测试
 
 ```
 [root@localhost conf]# wget www.mufeng.com
@@ -262,7 +264,7 @@ index.html                        100%[=========================================
 
 > 这个测试完全可以通过ip地址来实现，如果想通过域名访问，需要配置自己的DNS域名服务器bind
 
-# 13、测试本机httpd服务器的性能
+## 13、测试本机httpd服务器的性能
 
 ab命令格式说明
 
