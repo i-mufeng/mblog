@@ -10,6 +10,18 @@ export default defineConfig({
     lang: 'zh-cn',
     title: 'MBlog',
     description: '沐风的个人空间',
+    head: [
+        ['script',{},
+        `var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?9911a6b0c7d4d1799af72772dd527b1c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+`
+        ]
+    ],
     vite: {
         optimizeDeps: {
             include: ['element-plus'],
