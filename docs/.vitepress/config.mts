@@ -1,7 +1,7 @@
 import {defineConfig} from '@sugarat/theme/node'
 import {blogTheme} from './blog-theme'
 
-
+import timeline from "vitepress-markdown-timeline";
 // Vitepress 默认配置
 // 详见文档：https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -34,7 +34,7 @@ export default defineConfig({
         editLink: {
             pattern:
                 'https://github.com/i-mufeng/mblog/tree/master/docs/:path',
-            text: 'Edit On GitHub'
+            text: '在 Github 打开'
         },
         nav: [
             {text: '首页', link: '/'},
@@ -65,6 +65,14 @@ export default defineConfig({
                 icon: 'github',
                 link: 'https://github.com/i-mufeng'
             }
-        ]
-    }
+        ],
+        lastUpdated: {
+            text: '更新于',
+        }
+    },
+    markdown: {
+        config: (md) => {
+            md.use(timeline)
+        }
+    },
 })

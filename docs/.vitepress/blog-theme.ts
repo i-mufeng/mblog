@@ -38,7 +38,7 @@ const blogTheme = getThemeConfig({
     categoryId: 'DIC_kwDOKW0QN84CZimX'
   },
   footer: {
-    message: `Mblog © 2021-2023 Created by 沐风`,
+    message: `Mblog © 2021-2023 Created by 沐风 | 本站采用 <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a> 国际许可协议`,
     icpRecord: {
       name: '陇ICP备2021003158号-1',
       link: 'https://beian.miit.gov.cn/'

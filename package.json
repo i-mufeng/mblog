@@ -12,6 +12,7 @@
     "@sugarat/theme": "^0.2.6",
     "element-plus": "^2.3.14",
     "pagefind": "^1.0.3",
+    "vitepress-markdown-timeline": "^1.2.1",
     "vitepress-plugin-pagefind": "^0.2.10",
     "vue": "^3.3.4"
   },

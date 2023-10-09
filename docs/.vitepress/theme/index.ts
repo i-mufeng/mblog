@@ -3,5 +3,7 @@ import BlogTheme from '@sugarat/theme'
 import './green-theme.var.css'
 // 自定义样式重载
 import './style.scss'
+// 时间线样式
+import "vitepress-markdown-timeline/dist/theme/index.css";
 
 export default BlogTheme
