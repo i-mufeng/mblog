@@ -75,4 +75,7 @@ export default defineConfig({
             md.use(timeline)
         }
     },
+    sitemap: {
+        hostname: 'https://www.imufeng.cn'
+    }
 })
