@@ -5,5 +5,12 @@ import './green-theme.var.css'
 import './style.scss'
 // 时间线样式
 import "vitepress-markdown-timeline/dist/theme/index.css";
-
-export default BlogTheme
+import googleAnalytics from 'vitepress-plugin-google-analytics';
+export default {
+    ... BlogTheme,
+    enhanceApp: (ctx) => {
+        googleAnalytics({
+            id: 'G-38J2Q2X6HV',
+        })
+    }
+}

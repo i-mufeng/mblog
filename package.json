@@ -22,7 +22,8 @@
   "devDependencies": {
     "sass": "^1.68.0",
     "typescript": "^5.2.2",
-    "vitepress": "1.0.0-rc.20"
+    "vitepress": "1.0.0-rc.20",
+    "vitepress-plugin-google-analytics": "^1.0.2"
   },
   "author": "沐风",
   "license": "MIT"
