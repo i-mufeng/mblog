@@ -37,17 +37,31 @@ const blogTheme = getThemeConfig({
     category: 'General',
     categoryId: 'DIC_kwDOKW0QN84CZimX'
   },
-  footer: {
-    message: `Mblog © 2021-2023 Created by 沐风 | 本站采用 <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a> 国际许可协议`,
-    icpRecord: {
-      name: '陇ICP备2021003158号-1',
-      link: 'https://beian.miit.gov.cn/'
+  footer: [
+    {
+      message: "Mblog © 2021-2023 Created by 沐风",
+      copyright: {
+        message: "CC BY-NC-SA 4.0 国际许可协议",
+        link: "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans/"
+      },
+      icpRecord: {
+        icon: `<img src="https://www.upyun.com/static/favicon-16x16.png" alt="youpai ico"/>`,
+        name: "本站由 又拍云 提供CDN加速服务",
+        link: "https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"
+      }
     },
-    securityRecord: {
-      name: '渝公网安备 50011802010624号',
-      link: 'https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50011802010624'
+    {
+      version: true,
+      icpRecord: {
+        name: '陇ICP备2021003158号-1',
+        link: 'https://beian.miit.gov.cn/'
+      },
+      securityRecord: {
+        name: '渝公网安备 50011802010624号',
+        link: 'https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50011802010624'
+      },
     }
-  },
+  ],
   // 友链
   friend: [
     {

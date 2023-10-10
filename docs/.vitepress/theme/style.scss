@@ -26,6 +26,8 @@ main {
   //...
   --vp-c-brand: var(--vp-c-brand-1);
 }
+
+// 配置时间轴样式兼容系统
 .timeline-dot .timeline-dot-title {
   color: var(--vp-c-text-1) !important;
 }
@@ -37,4 +39,24 @@ main {
 }
 .timeline-dot .timeline-dot-title {
   font-size: 18px !important;
+}
+// 链接 hover 效果
+.mf-a-hover:hover {
+  color: var(--vp-c-brand-1);
+  text-decoration: underline;
+  text-decoration-color: var(--vp-c-brand-1);
+  text-decoration-style: dashed;
+}
+
+.blog-footer {
+  // footer 说明
+  p:first-child {
+    margin-bottom: 10px;
+  }
+
+  // 图片黑白效果
+  .footer-item img {
+    filter: grayscale(100%);
+  }
+
 }
