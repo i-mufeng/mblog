@@ -14,7 +14,7 @@ sidebar: false
 
 - **Github：** `i-mufeng`
 
-- **其他站点：** `[username](link)`
+- **其他平台：** `[username](link)`
 
 - **一句话：** `但愿岁月如客，来去皆从容。`
 
@@ -22,24 +22,69 @@ sidebar: false
 
 - **站点地址：** `https://imufeng.cn`
 
-- **头像链接：** `https://cn.gravatar.com/avatar/f1dcdc8fa782b81824df5d67022e4d4a`
+- **头像链接：** `https://cravatar.cn/avatar/f1dcdc8fa782b81824df5d67022e4d4a`
 
 :::
 <script setup>
-	import { VPTeamMembers } from 'vitepress/theme'
-	const members = [
+	import { VPTeamMembers } from 'vitepress/theme';
+  const webSiteSvg = '<svg t="1696924383734" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1978" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><path d="M736 864H288c-17.6 0-32 14.4-32 32s14.4 32 32 32h448c17.6 0 32-14.4 32-32s-14.4-32-32-32zM832 96H192c-70.4 0-128 57.6-128 128v416c0 70.4 57.6 128 128 128h640c70.4 0 128-57.6 128-128V224c0-70.4-57.6-128-128-128zM576 544c0 17.6-14.4 32-32 32H288c-17.6 0-32-14.4-32-32s14.4-32 32-32h256c17.6 0 32 14.4 32 32z m192-224c0 17.6-14.4 32-32 32H288c-17.6 0-32-14.4-32-32s14.4-32 32-32h448c17.6 0 32 14.4 32 32z" p-id="1979"></path></svg>'; 
+	const authoritys = [
       {
-        avatar: 'https://www.github.com/yyx990803.png',
+        avatar: 'https://cdn.imufeng.cn/imufeng/7459409-1f4ded40bd47b544.webp',
         name: 'Evan You',
         title: 'Creator',
         links: [
+          { icon: {svg: webSiteSvg}, link: 'https://evanyou.me/' },
           { icon: 'github', link: 'https://github.com/yyx990803' },
           { icon: 'twitter', link: 'https://twitter.com/youyuxi' }
         ]
       },
-    ]
+      {
+        avatar: 'https://cdn.imufeng.cn/imufeng/ruanyifeng.jpg',
+        name: '阮一峰',
+        title: '一个从未谋面的引路人',
+        links: [
+          { icon: {svg: webSiteSvg}, link: 'https://www.ruanyifeng.com/' },
+          { icon: 'github', link: 'https://github.com/ruanyf' },
+          { icon: 'twitter', link: 'https://twitter.com/ruanyf' }
+        ]
+      },
+    ];
+const friends = [
+      {
+        avatar: 'https://cdn.imufeng.cn/mblog/202310101659259.png',
+        name: 'Manggo',
+        title: '女朋友，一个前端',
+        links: [
+          { icon: {svg: webSiteSvg}, link: 'https://www.manggo.cn/' },
+        ]
+      },
+      {
+        avatar: 'https://img2.moeblog.vip/images/ev3v.png',
+        name: 'Shiro',
+        title: '九河下梢之海河',
+        links: [
+          { icon: {svg: webSiteSvg}, link: 'https://justmyblog.net/' },
+          { icon: 'twitter', link: 'https://twitter.com/verymoes' }
+        ]
+      },
+      {
+        avatar: 'https://static.lty.fun/weblogo/my.jpg',
+        name: 'Luminous’ Home',
+        title: '记录生活中的点滴',
+        links: [
+          { icon: {svg: webSiteSvg}, link: 'https://luotianyi.vc/' },
+        ]
+      },
+]
 </script>
 
 # 友情链接
 
-<VPTeamMembers size="small" :members="members" />
+### 膜拜大佬
+
+<VPTeamMembers size="medium" :members="authoritys" />
+
+### 基友
+
+<VPTeamMembers size="small" :members="friends" />
