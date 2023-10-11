@@ -47,12 +47,10 @@ export default defineConfig({
                 ]
             },
             {
-                text: '全栈知识体系',
+                text: '全栈开发交流',
                 items: [
-                    {text: "前端开发", link: '/full-stack/frontend/'},
-                    {text: "后端开发", link: '/full-stack/backend/'},
-                    {text: "数据库", link: '/full-stack/database/'},
-                    {text: "系统运维", link: '/full-stack/devops/'},
+                    {text: "前端开发", link: '/full-stack/#一、后端技术分享'},
+                    {text: "后端开发", link: '/full-stack/#二、前端技术分享'},
                 ],
             },
             {text: '杂谈随笔', link: '/tittle-tattle/'},

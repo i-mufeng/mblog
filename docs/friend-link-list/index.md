@@ -8,21 +8,18 @@ sidebar: false
 ---
 
 ::: details 友链申请格式
-- **昵称：** `Mufeng`
 
-- **E-mail：** `admin@imufeng.cn`
-
-- **Github：** `i-mufeng`
-
-- **其他平台：** `[username](link)`
-
-- **一句话：** `但愿岁月如客，来去皆从容。`
 
 - **站点名称：** `沐风的小站`
 
 - **站点地址：** `https://imufeng.cn`
 
+- **一句话：** `但愿岁月如客，来去皆从容。`
+
 - **头像链接：** `https://cravatar.cn/avatar/f1dcdc8fa782b81824df5d67022e4d4a`
+
+- **其他平台：** `[Github/Twitter...](link)`
+
 
 :::
 <script setup>
@@ -53,19 +50,30 @@ sidebar: false
 const friends = [
       {
         avatar: 'https://cdn.imufeng.cn/mblog/202310101659259.png',
-        name: 'Manggo',
-        title: '女朋友，一个前端',
+        name: 'Manggo\'s Zone',
+        title: '前端交流技术分享',
         links: [
           { icon: {svg: webSiteSvg}, link: 'https://www.manggo.cn/' },
         ]
       },
       {
+        avatar: 'https://sugarat.top/logo.png',
+        name: '粥里有勺糖',
+        title: '你的指尖,拥有改变世界的力量',
+        links: [
+          { icon: {svg: webSiteSvg}, link: 'https://sugarat.top/' },
+          { icon: 'github' , link: 'https://github.com/ATQQ' },
+          { icon: 'twitter' , link: 'https://twitter.com/Mr_XiaoZou' },
+        ]
+      },
+      {
         avatar: 'https://img2.moeblog.vip/images/ev3v.png',
-        name: 'Shiro',
-        title: '九河下梢之海河',
+        name: '白の后花园',
+        title: '一片互联网自留地',
         links: [
           { icon: {svg: webSiteSvg}, link: 'https://justmyblog.net/' },
-          { icon: 'twitter', link: 'https://twitter.com/verymoes' }
+          { icon: 'twitter', link: 'https://twitter.com/verymoes' },
+          { icon: 'github', link: 'https://github.com/verymoe' }
         ]
       },
       {
@@ -79,12 +87,10 @@ const friends = [
 ]
 </script>
 
-# 友情链接
-
 ### 膜拜大佬
 
 <VPTeamMembers size="medium" :members="authoritys" />
 
-### 基友
+### 友链
 
 <VPTeamMembers size="small" :members="friends" />

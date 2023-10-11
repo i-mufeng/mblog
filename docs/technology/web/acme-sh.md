@@ -1,10 +1,11 @@
 ---
+description: 使用 `acme.sh` 部署 Let's Encrypt 泛域名证书。
 categories: 
    - 工具分享
 tags: 
    - Linux
    - 运维
-
+sticky: 1
 ---
 
 # 泛域名证书申请以及部署
