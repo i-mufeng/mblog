@@ -10,7 +10,6 @@ html.dark {
   &::before {
     background-image: var(--mf-bg-url);
     background-size: cover;
-    transition: 3s;
   }
   // 定义遮罩样式
   background: radial-gradient(
@@ -18,6 +17,10 @@ html.dark {
     rgba(var(--bg-gradient-home), 1) 0%,
     rgba(var(--bg-gradient-home), 0) 150%
   );
+}
+
+.VPNavBar {
+  transition: background-color .6s;
 }
 
 .blog-item {
@@ -68,4 +71,11 @@ main {
     filter: grayscale(100%);
   }
 
+}
+
+@media (min-width: 960px){
+
+ .VPNavBar:not(.top) .content-body[data-v-a0aa0fed] {
+   background-color: unset !important;
+ }
 }
