@@ -4,6 +4,7 @@ html {
 html.dark {
   --mf-bg-url: url(assets/bg-dark.webp);
 }
+
 .VPHome {
   // 自定义首页背景图
   &::before {
@@ -19,6 +20,9 @@ html.dark {
   );
 }
 
+.blog-item {
+  border-radius: .8rem !important;
+}
 
 main {
   p {
