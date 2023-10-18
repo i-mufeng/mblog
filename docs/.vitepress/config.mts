@@ -38,22 +38,50 @@ export default defineConfig({
         },
         nav: [
             {text: '首页', link: '/'},
+            {text: '折腾日志',link: '/technology/web/'},
             {
-                text: '技术笔记',
+                text: '后端开发分享',
                 items: [
-                    {text: "建站教程", link: '/technology/web/'},
-                    {text: "工具分享", link: '/technology/tools/'},
-                    {text: "折腾日记", link: '/technology/other/'},
-                ]
-            },
-            {
-                text: '全栈开发交流',
-                items: [
-                    {text: "前端开发", link: '/full-stack/#一、后端技术分享'},
-                    {text: "后端开发", link: '/full-stack/#二、前端技术分享'},
+                    {text: "JAVA 后端开发",
+                        items: [
+                            {text: 'JAVA 集合框架', link: '#'},
+                            {text: 'JAVA 并发编程', link: '#'},
+                            {text: 'JAVA 使用技巧', link: '#'},
+                        ]
+                    },
+                    {text: "数据库相关",
+                        items: [
+                            {text: 'SQL 练习', link: '#'},
+                            {text: 'NoSQL 相关', link: '#'},
+                        ]
+                    },
+                    {text: "Spring 全家桶深入学习",
+                        items: [
+                            {text: 'Spring Framework', link: '#'},
+                            {text: 'Spring Boot', link: '#'},
+                            {text: 'Spring Cloud', link: '#'},
+                        ]
+                    },
                 ],
             },
-            {text: '杂谈随笔', link: '/tittle-tattle/'},
+            {
+                text: 'Linux 运维笔记',
+                items: [
+                    {
+                        text: 'Linux 基本管理',
+                        items: [
+                            {text: 'Linux 基础',link:'#'},
+                            {text: '网络相关',link:'#'},
+                        ]
+                    },{
+                        text: 'Linux 基本管理',
+                        items: [
+                            {text: 'Linux 基础',link:'#'},
+                            {text: '网络相关',link:'#'},
+                        ]
+                    },
+                ]
+            },
             {text: '每日一题', link: '/question-by-day/'},
             {text: '友链', link: '/friend-link-list/'},
             {text: '关于本站', link: '/about/'},
