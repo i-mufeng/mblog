@@ -42,11 +42,10 @@ export default defineConfig({
             {
                 text: '后端开发分享',
                 items: [
-                    {text: "JAVA 后端开发",
+                    {text: "JAVA 学习笔记",
                         items: [
-                            {text: 'JAVA 集合框架', link: '#'},
+                            {text: 'JAVA 面向对象', link: '/full-stack/java/'},
                             {text: 'JAVA 并发编程', link: '#'},
-                            {text: 'JAVA 使用技巧', link: '#'},
                         ]
                     },
                     {text: "数据库相关",
@@ -71,13 +70,7 @@ export default defineConfig({
                         text: 'Linux 基本管理',
                         items: [
                             {text: 'Linux 基础',link:'#'},
-                            {text: '网络相关',link:'#'},
-                        ]
-                    },{
-                        text: 'Linux 基本管理',
-                        items: [
-                            {text: 'Linux 基础',link:'#'},
-                            {text: '网络相关',link:'#'},
+                            {text: '网络管理',link:'#'},
                         ]
                     },
                 ]
