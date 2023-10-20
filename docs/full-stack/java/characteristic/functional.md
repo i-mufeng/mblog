@@ -3,22 +3,23 @@ description: Lambda 表达式、Stream 流、Optional 类操作分享。
 tags:
     - Java
 category: JAVA 学习笔记
+cover: false
 ---
 
-# Java8新特性详解
+# Java8 新特性详解
 
 > Lambda 表达式、Stream 流、Optional 类操作分享。
 
 ## 一、Lambda表达式
 
-> Lambda表达式可以让你简洁的表示一个行为或传递代码。Lambda表达式可以理解为简洁的表示可传递匿名函数的一种方式：它没有名称，但是有参数列表、函数主体、返回类型
->
-> - **匿名：**没有名称
-> - **函数：**Lambda函数不像方法那样属于特定的类。但是和方法一样，有参数列表、函数体以及返回类型 。也可以抛出异常。
-> - **传递：**Lambda表达式可以作为参数传递给方法或存储在变量中。
-> - **简介：**无需像匿名类那样写很多模板代码。
+Lambda表达式可以让你简洁的表示一个行为或传递代码。Lambda表达式可以理解为简洁的表示可传递匿名函数的一种方式：它没有名称，但是有参数列表、函数主体、返回类型
 
-示例：
+- **匿名：** 没有名称
+- **函数：** Lambda函数不像方法那样属于特定的类。但是和方法一样，有参数列表、函数体以及返回类型 。也可以抛出异常。
+- **传递：** Lambda表达式可以作为参数传递给方法或存储在变量中。
+- **简介：** 无需像匿名类那样写很多模板代码。
+
+**示例：**
 
 ```Java
 // 不使用Lambda
@@ -35,52 +36,50 @@ Comparator<Apple> byWeight =
 
 ![img](https://cdn.imufeng.cn/imufeng/epub_26211813_42)
 
-## Stream流
+## 二、Stream流
 
-> Stream流是Java8提供 对集合或数组进行链状流式操作的函数式编程模式。
+> `Stream流` 是 Java8 提供对集合或数组进行链状流式操作的函数式编程模式。
 
-###  中间操作
+###  2.1 中间操作
 
-- **filter：**过滤
+- **filter：** 过滤
 
-- **map：**计算或转换
+- **map：** 计算或转换
 
-- **distinct：**去除重复对象（equals方法）
+- **distinct：** 去除重复对象（equals 方法）
 
-- **sorted：**排序
+- **sorted：** 排序，可以实现 Comparator 接口重写 compareTo 方法进行排序
 
-  可以实现Comparator接口重写compareTo方法进行排序
+- **limit：** 设置流的最大长度
 
-- **limit：**设置流的最大长度
+- **skip：** 跳过前n个元素
 
-- **skip：**跳过前n个元素
+- **flatMap：** 将一个对象转换为多个对象作为流中的元素
 
-- **flatMap：**将一个对象转换为多个对象作为流中的元素
+### 2.2 终结操作
 
-### 终结操作
-
-> 如果没有终结操作，中间操作不会执行
+::: danger 注意
+如果没有终结操作，中间操作不会执行 
+:::
 
 #### 常规操作
 
-- **forEach：**遍历
+- **forEach：** 遍历
 
-- **count：**计数
+- **count：** 计数
 
-- **max&min：**求最值
+- **max&min：** 求最值 需要指定比较最大值的规则 返回 Optional
 
-  需要指定比较最大值的规则 返回Optional
-
-- **collect：**将流转换为集合
+- **collect：** 将流转换为集合
 
 #### 查找与匹配
 
 -  **anyMatch：** 判断是否存在能够符合匹配条件的元素
 
 -  **allMatch：** 判断是否全部匹配条件
--  **noneMatch：**是否都不符合条件
--  **findAny：**获取任意一个符合条件元素（不一定是第一个）
--  **findFirst：**获取第一个符合条件的元素
+-  **noneMatch：** 是否都不符合条件
+-  **findAny：** 获取任意一个符合条件元素（不一定是第一个）
+-  **findFirst：** 获取第一个符合条件的元素
 
 #### reduce归并
 
@@ -108,15 +107,15 @@ System.out.println(people.stream()
         .reduce(Integer.MAX_VALUE, Integer::min));
 ```
 
-## 二、Optional
+## 三、Optional
 
-> 使用Optional可以写出更优雅的代码来避免空指针异常
+> 使用 Optional 可以写出更优雅的代码来避免空指针异常
 >
-> Optional类似于包装类，将具体的数据封装到Optional对象内部。我们可以使用Optional中封装好的方法操作封装的数据。优雅的避免空指针异常
+> Optional 类似于包装类，将具体的数据封装到Optional对象内部。我们可以使用Optional中封装好的方法操作封装的数据。优雅的避免空指针异常
 
 ### 创建对象
 
-`ofNullAble()`方法会将其封装为一个Optional对象
+`ofNullAble()` 方法会将其封装为一个Optional对象
 
 ```java
 People people = new People();
@@ -132,7 +131,7 @@ people.setAge(13);
 Optional<People> people1 = Optional.of(people);
 ```
 
-如果需要一个空值，使用emepy()方法
+如果需要一个空值，使用 emepy() 方法
 
 ### 安全获取值
 
@@ -148,7 +147,7 @@ Optional<People> people1 = Optional.of(people);
 
 `map()` 数据转换。类似于Stream流中的map方法
 
-## 三、函数式接口
+## 四、函数式接口
 
 > **只有一个抽象方法的接口称为函数式接口**
 >
