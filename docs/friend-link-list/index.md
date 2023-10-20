@@ -93,6 +93,14 @@ const friends = [
           { icon: "github", link: 'https://github.com/aicsuk' },
         ]
       },
+      {
+        avatar: 'https://img.puresys.net/wp-content/uploads/2021/05/cropped-1621683691-20210522193059-192x192.jpg',
+        name: 'Puresys',
+        title: ' 纯净系统-软件下载',
+        links: [
+          { icon: {svg: webSiteSvg}, link: 'https://www.puresys.net' },
+        ]
+      },
 ]
 </script>
 
