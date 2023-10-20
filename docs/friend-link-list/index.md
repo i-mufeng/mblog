@@ -100,7 +100,7 @@ const friends = [
         links: [
           { icon: {svg: webSiteSvg}, link: 'https://www.puresys.net' },
         ]
-      },
+      }
 ]
 </script>
 
