@@ -13,4 +13,6 @@ common: false
 - [抽象类和抽象方法](./oop/abstract.md)
 
 
-### 其他
+### JAVA 特性分享
+
+- [Java8新特性详解](./characteristic/functional.md)
