@@ -84,6 +84,15 @@ const friends = [
           { icon: {svg: webSiteSvg}, link: 'https://luotianyi.vc/' },
         ]
       },
+      {
+        avatar: 'https://www.aicsuk.net/imgs/avatar1.jpg',
+        name: 'Aicsukの世界',
+        title: '一个小小的博客',
+        links: [
+          { icon: {svg: webSiteSvg}, link: 'https://www.aicsuk.net' },
+          { icon: "github", link: 'https://github.com/aicsuk' },
+        ]
+      },
 ]
 </script>
 
