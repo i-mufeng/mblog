@@ -5,6 +5,9 @@ on:
   pull_request: 
     branches: ["master"]
 
+env:
+  TZ: Asia/Shanghai
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
