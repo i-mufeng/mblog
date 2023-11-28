@@ -35,7 +35,7 @@ const blogTheme = getThemeConfig({
     repo: 'i-mufeng/mblog',
     repoId: 'R_kgDOKW0QNw',
     category: 'General',
-    categoryId: 'DIC_kwDOKW0QN84CZimX'
+    categoryId: 'DIC_kwDOKW0QN84CZimY'
   },
   footer: [
     {
