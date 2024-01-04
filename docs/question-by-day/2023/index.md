@@ -4,6 +4,7 @@ date: false
 author: false
 title: 每日一题 - 2023
 description: 每天至少一道面试题，范围不限。
+hidden: true
 ---
 
 > 每日一题从 `2023年09月27日` 开始记录，不限分类，欢迎留言监督。
