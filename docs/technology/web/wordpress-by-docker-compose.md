@@ -6,8 +6,6 @@ tags:
    - Linux
    - Docker
    - WordPress
-
-sticky: 2
 ---
 
 # 基于DockerCompose的WordPress环境部署（附配置优化）

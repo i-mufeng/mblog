@@ -38,7 +38,7 @@ export default defineConfig({
         },
         nav: [
             {text: '首页', link: '/'},
-            {text: '折腾日志',link: '/technology/web/'},
+            {text: '折腾日志',link: '/technology/'},
             {
                 text: '后端开发分享',
                 items: [
