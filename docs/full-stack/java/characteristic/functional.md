@@ -4,6 +4,7 @@ tags:
     - Java
 category: JAVA 学习笔记
 cover: false
+sticky: 3
 ---
 
 # Java8 新特性详解

@@ -9,7 +9,7 @@ blog:
    - 但愿岁月如客 来去皆从容
  # 设置 inspiringTimeout 可以实现自动切换
  inspiringTimeout: 6000
- pageSize: 5
+ pageSize: 12
  author: MuFeng
  logo: https://gravatar.loli.net/avatar/f1dcdc8fa782b81824df5d67022e4d4a?s=360
 ---
