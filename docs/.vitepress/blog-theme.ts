@@ -5,6 +5,7 @@ import { getThemeConfig } from '@sugarat/theme/node';
 import type { Theme } from '@sugarat/theme'
 
 const baseUrl = 'https://www.imufeng.cn'
+
 const RSS: Theme.RSSOptions = {
   title: 'Mblog - 沐风的个人博客',
   baseUrl,
