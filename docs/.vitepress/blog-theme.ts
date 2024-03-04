@@ -8,7 +8,7 @@ const baseUrl = 'https://www.imufeng.cn'
 const RSS: Theme.RSSOptions = {
   title: 'Mblog - 沐风的个人博客',
   baseUrl,
-  copyright: 'Mblog © 2021-2023 Created by 沐风',
+  copyright: 'Mblog © 2021-2024 Created by 沐风',
   description: '但愿岁月如客，来去皆从容。（后端开发技术交流）',
   language: 'zh-cn',
   image: baseUrl+'/logo.svg',
@@ -39,7 +39,7 @@ const blogTheme = getThemeConfig({
   },
   footer: [
     {
-      message: "Mblog © 2021-2023 Created by 沐风",
+      message: "Mblog © 2021-2024 Created by 沐风",
       copyright: {
         message: "CC BY-NC-SA 4.0 国际许可协议",
         link: "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans/"
