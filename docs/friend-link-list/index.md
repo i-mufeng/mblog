@@ -37,7 +37,7 @@ sidebar: false
         ]
       },
       {
-        avatar: 'https://cdn.imufeng.cn/imufeng/ruanyifeng.jpg',
+        avatar: 'https://avatars.githubusercontent.com/u/905434?v=4',
         name: '阮一峰',
         title: '一个从未谋面的引路人',
         links: [
@@ -99,6 +99,23 @@ const friends = [
         title: ' 纯净系统-软件下载',
         links: [
           { icon: {svg: webSiteSvg}, link: 'https://www.puresys.net' },
+        ]
+      },
+      {
+        avatar: 'https://img.bestreven.top/20240308_1709872211169.png',
+        name: 'BestReven博客',
+        title: '一个专注技术分享的平台',
+        links: [
+          { icon: {svg: webSiteSvg}, link: 'https://www.bestreven.top' },
+        ]
+      },
+      {
+        avatar: 'https://www.wxmin.cn:9000/ants-file/imgUrl/logo_1661824383783.png',
+        name: ' June 12',
+        title: 'June 12，小陈的个人博客。记录所学知识，分享开发经验！',
+        links: [
+          { icon: {svg: webSiteSvg}, link: 'https://www.wxmin.cn' },
+          { icon: "github", link: 'https://github.com/cc-chenshuang' },
         ]
       }
 ]
