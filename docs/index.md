@@ -11,5 +11,5 @@ blog:
  inspiringTimeout: 6000
  pageSize: 12
  author: MuFeng
- logo: https://gravatar.loli.net/avatar/f1dcdc8fa782b81824df5d67022e4d4a?s=360
+ logo: https://cdn.imufeng.cn/mblog/avatar-1.jpg
 ---

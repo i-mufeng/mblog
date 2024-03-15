@@ -1,11 +1,12 @@
 ---
-aside: false
 hidden: true
 readingTime: false
 date: false
 author: false
-sidebar: false
 ---
 
-# 我的分享
+# 其他
 
+## 目录
+
+- [XPATH 学习笔记](./xpath.md)

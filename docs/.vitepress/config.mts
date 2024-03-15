@@ -11,8 +11,8 @@ export default defineConfig({
     title: 'MBlog',
     description: '沐风的个人空间',
     head: [
-        ['script',{},
-        `var _hmt = _hmt || [];
+        ['script', {},
+            `var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
   hm.src = "https://hm.baidu.com/hm.js?9911a6b0c7d4d1799af72772dd527b1c";
@@ -38,46 +38,48 @@ export default defineConfig({
         },
         nav: [
             {text: '首页', link: '/'},
-            {text: '折腾日志',link: '/technology/'},
             {
-                text: '后端开发分享',
+                text: '全栈开发',
                 items: [
-                    {text: "JAVA 学习笔记",
-                        items: [
-                            {text: 'JAVA 面向对象', link: '/full-stack/java/'},
-                            {text: 'JAVA 并发编程', link: '#'},
-                        ]
-                    },
-                    {text: "数据库相关",
-                        items: [
-                            {text: 'SQL 练习', link: '#'},
-                            {text: 'NoSQL 相关', link: '#'},
-                        ]
-                    },
-                    {text: "Spring 全家桶深入学习",
-                        items: [
-                            {text: 'Spring Framework', link: '#'},
-                            {text: 'Spring Boot', link: '#'},
-                            {text: 'Spring Cloud', link: '#'},
-                        ]
-                    },
-                ],
-            },
-            {
-                text: 'Linux 运维笔记',
-                items: [
-                    {
-                        text: 'Linux 基本管理',
-                        items: [
-                            {text: 'Linux 基础',link:'#'},
-                            {text: '网络管理',link:'#'},
-                        ]
-                    },
+                    {text: '大前端', link: '/full-stack/front-end/'},
+                    {text: 'JAVA', link: '/full-stack/java/'},
+                    {text: 'RUST', link: '/full-stack/rust/'},
+                    {text: '数据库', link: '/full-stack/database/'},
+                    {text: '其他', link: '/full-stack/other/'},
                 ]
             },
-            {text: '每日一题', link: '/question-by-day/'},
+            {
+                text: '计算机基础',
+                items: [
+                    {text: '计算机网络', link: '/computer-basics/network/'},
+                    {text: '操作系统', link: '/computer-basics/operating-system/'},
+                    {text: '数据结构与算法', link: '/computer-basics/data-structure/'},
+                ]
+            },
+            {
+                text: '折腾日志',
+                items: [
+                    {text: 'Linux 企业级运维', link: '/training/linux/'},
+                    {text: '软件工具分享', link: '/training/software/'},
+                ]
+            },
+            {
+                text: '面试分享',
+                items: [
+                    {text: '每日一题', link: '/interview/question-by-day/'},
+                    {text: '面试分享', link: '/interview/skills/'},
+                ]
+            },
+            {
+                text: '杂谈日志',
+                items: [
+                    {text: '科技周报', link: '/notes/technology-weekly/'},
+                    {text: '读书笔记', link: '/notes/reading-notes/'},
+                    {text: '生活随笔', link: '/notes/life-notes/'},
+                ]
+            },
             {text: '友链', link: '/friend-link-list/'},
-            {text: '关于本站', link: '/about/'},
+            {text: '关于', link: '/about/'},
         ],
         socialLinks: [
             {

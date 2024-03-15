@@ -112,7 +112,7 @@ const friends = [
       {
         avatar: 'https://www.wxmin.cn:9000/ants-file/imgUrl/logo_1661824383783.png',
         name: ' June 12',
-        title: 'June 12，小陈的个人博客。记录所学知识，分享开发经验！',
+        title: '小陈的个人博客。记录所学知识，分享开发经验！',
         links: [
           { icon: {svg: webSiteSvg}, link: 'https://www.wxmin.cn' },
           { icon: "github", link: 'https://github.com/cc-chenshuang' },
