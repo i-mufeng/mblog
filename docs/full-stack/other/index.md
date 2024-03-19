@@ -10,3 +10,4 @@ author: false
 ## 目录
 
 - [XPATH 学习笔记](./xpath.md)
+- [Redis 自学笔记](./redis.md)
