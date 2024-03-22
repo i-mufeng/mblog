@@ -19,6 +19,10 @@ html.dark {
   );
 }
 
+.VPNav .content-body{
+  transition: none !important;
+}
+
 .VPNavBar {
   transition: background-color .6s;
 }
