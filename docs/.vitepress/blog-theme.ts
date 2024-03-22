@@ -21,7 +21,7 @@ const RSS: Theme.RSSOptions = {
 const blogTheme = getThemeConfig({
   // 开启RSS支持
   RSS,
-  
+
   // 默认开启pagefind离线的全文搜索支持（如使用其它的可以设置为false）
   // 如果npx pagefind 时间过长，可以手动将其安装为项目依赖 pnpm add pagefind
   // search: false,
@@ -49,7 +49,7 @@ const blogTheme = getThemeConfig({
         icon: `<img src="https://www.upyun.com/static/favicon-16x16.png" alt="youpai ico"/>`,
         name: "本站由 又拍云 提供CDN加速服务",
         link: "https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"
-      }
+      },
     },
     {
       version: true,
@@ -82,36 +82,27 @@ const blogTheme = getThemeConfig({
   //   },
   // ],
 
-  // popover: {
-  //   title: '公告',
-  //   body: [
-  //     {
-  //       type: 'text',
-  //       content:
-  //         'QQ交流群：681489336 🎉🎉',
-  //     },
-  //     {
-  //       type: 'text',
-  //       content:
-  //         '👇公众号👇---👇 微信 👇',
-  //     },
-  //     {
-  //       type: 'image',
-  //       src: 'https://img.cdn.sugarat.top/mdImg/MTYxNTAxODc2NTIxMA==615018765210',
-  //     },
-  //     {
-  //       type: 'text',
-  //       content:
-  //         '欢迎大家加群&私信交流',
-  //     },
-  //     {
-  //       type: 'button',
-  //       content: '博客',
-  //       link: 'https://sugarat.top',
-  //     },
-  //   ],
-  //   duration: 0,
-  // },
+  popover: {
+    title: '公告',
+    body: [
+      {
+        type: 'text',
+        content:
+          '👇微信扫码添加好友👇',
+      },
+      {
+        type: 'image',
+        src: 'https://cdn.imufeng.cn/mblog/mufeng_wechatcode_transparent.png',
+      },
+      {
+        type: 'button',
+        content: `本站已支持IPV6访问`,
+        link: 'https://ipw.cn/ipv6webcheck/?site=www.imufeng.cn',
+
+      },
+    ],
+    duration: 0,
+  },
 });
 
 export { blogTheme };

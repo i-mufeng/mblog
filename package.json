@@ -8,23 +8,23 @@
     "serve": "vitepress serve docs"
   },
   "dependencies": {
-    "@element-plus/icons-vue": "^2.1.0",
+    "@element-plus/icons-vue": "^2.3.1",
     "@sugarat/theme": "^0.2.27",
-    "element-plus": "^2.3.14",
-    "pagefind": "^1.0.3",
+    "element-plus": "^2.6.1",
+    "pagefind": "^1.0.4",
     "vitepress-markdown-timeline": "^1.2.1",
-    "vitepress-plugin-pagefind": "^0.2.10",
-    "vue": "^3.3.4"
+    "vitepress-plugin-pagefind": "^0.2.13",
+    "vue": "^3.4.21"
   },
   "directories": {
     "doc": "docs"
   },
   "devDependencies": {
-    "sass": "^1.68.0",
-    "typescript": "^5.2.2",
+    "sass": "^1.72.0",
+    "typescript": "^5.4.3",
     "vitepress": "1.0.0-rc.34",
     "vitepress-plugin-google-analytics": "^1.0.2"
   },
   "author": "沐风",
-  "license": "MIT"
+  "license": "CC BY-NC-SA 4.0"
 }

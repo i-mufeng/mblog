@@ -12,4 +12,8 @@ blog:
  pageSize: 12
  author: MuFeng
  logo: https://cdn.imufeng.cn/mblog/avatar-1.jpg
+head:
+  - - meta
+    - name: description
+      content: 沐风的个人博客（imufeng.cn），博主是一名新手全栈开发，博客内容主要是全栈开发交流、全栈学习笔记、面试技巧、工具分享等内容。
 ---

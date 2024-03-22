@@ -5,6 +5,11 @@ tags:
 category: JAVA 学习笔记
 cover: false
 sticky: 3
+
+head:
+  - - meta
+    - name: keywords
+      content: java,lambda,stream流,Optional,JAVA8新特性
 ---
 
 # Java8 新特性详解
