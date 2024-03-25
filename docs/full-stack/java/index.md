@@ -14,6 +14,9 @@ common: false
 
 - [抽象类和抽象方法](./oop/abstract.md)
 
+### 重学 JAVA 设计模式
+
+- [重学 JAVA 设计模式](./design-patterns/index.md)
 
 ### JAVA 特性分享
 
