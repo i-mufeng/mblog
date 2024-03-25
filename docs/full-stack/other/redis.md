@@ -4,6 +4,7 @@ categories:
   - 技术笔记分享
 tags: 
    - Redis
+outline: [2,3]
 ---
 
 

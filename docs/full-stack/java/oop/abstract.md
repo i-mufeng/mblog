@@ -5,6 +5,7 @@ categories:
 tags: 
    - Java
    - OOP
+outline: [2, 3]
 ---
 
 # 抽象类和抽象方法

@@ -6,6 +6,7 @@ tags:
    - Linux
    - Docker
    - WordPress
+outline: [2,3]
 ---
 
 # 基于DockerCompose的WordPress环境部署（附配置优化）

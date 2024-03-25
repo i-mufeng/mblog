@@ -5,7 +5,7 @@ tags:
 category: JAVA 学习笔记
 cover: false
 sticky: 3
-
+outline: [2,3]
 head:
   - - meta
     - name: keywords

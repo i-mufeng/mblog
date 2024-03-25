@@ -3,9 +3,14 @@ description: Flex（Flexible Box）弹性布局，用于为盒装模型提供较
 cover: https://cdn.imufeng.cn/mblog/5d23262fa4383aa19d21085d1bf8f1dd.png
 categories: 
    - 前端学习笔记
+outline: [2,3]
 tags: 
    - CSS
    - 布局
+head:
+  - - meta
+    - name: keywords
+      content: 前端开发, CSS, 布局, Flex, 流式布局
 ---
 
 # 浅学 Flex 流式布局
