@@ -4,6 +4,7 @@ hidden: true
 author: false
 title: 每日一题
 description: 每天至少一道全栈题目分享，范围不限。
+recommend: false
 ---
 
 # 每日一题
