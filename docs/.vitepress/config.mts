@@ -10,6 +10,7 @@ export default defineConfig({
     lang: 'zh-cn',
     title: 'MBlog',
     description: '沐风的个人空间',
+    cleanUrls: true,
     head: [
         ['script', {},
             `var _hmt = _hmt || [];
@@ -98,5 +99,6 @@ export default defineConfig({
     },
     sitemap: {
         hostname: 'https://www.imufeng.cn'
-    }
+    },
+
 })

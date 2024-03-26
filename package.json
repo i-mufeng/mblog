@@ -9,8 +9,8 @@
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
-    "@sugarat/theme": "^0.2.27",
-    "element-plus": "^2.6.1",
+    "@sugarat/theme": "^0.2.29",
+    "element-plus": "^2.6.2",
     "pagefind": "^1.0.4",
     "vitepress-markdown-timeline": "^1.2.1",
     "vitepress-plugin-pagefind": "^0.2.13",
