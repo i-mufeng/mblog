@@ -1,6 +1,6 @@
 ---
 description: Flex（Flexible Box）弹性布局，用于为盒装模型提供较大的灵活性。能够灵活，充分利用浏览器的空间，减少了多端适配的难度和成本。
-cover: https://cdn.imufeng.cn/mblog/5d23262fa4383aa19d21085d1bf8f1dd.png
+cover: https://cdn.imufeng.cn/mblog/6175e8bcd0a48acaa01a9b31ce7b0695.png
 categories: 
    - 前端学习笔记
 outline: [2,3]
