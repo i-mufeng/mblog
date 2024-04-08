@@ -38,6 +38,12 @@ const blogTheme = getThemeConfig({
     category: 'General',
     categoryId: 'DIC_kwDOKW0QN84CZimY'
   },
+  buttonAfterArticle: {
+    openTitle: '赞赏一下',
+    closeTitle: '下次一定',
+    content: '<img src="https://cdn.imufeng.cn/mblog/5dac797f91625543d0fdda29b0336eca.jpg" alt="赞赏码">',
+    icon: 'wechatPay',
+  },
   footer: [
     {
       message: "Mblog © 2021-2024 Created by 沐风",

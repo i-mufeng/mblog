@@ -9,19 +9,24 @@
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
-    "@sugarat/theme": "^0.2.29",
-    "element-plus": "^2.6.2",
-    "pagefind": "^1.0.4",
+    "@sugarat/theme": "^0.3.0",
+    "element-plus": "^2.6.3",
+    "markdown-it": "^14.1.0",
+    "pagefind": "^1.1.0",
     "vitepress-markdown-timeline": "^1.2.1",
-    "vitepress-plugin-pagefind": "^0.2.13",
+    "vitepress-plugin-pagefind": "^0.2.14",
     "vue": "^3.4.21"
   },
   "directories": {
     "doc": "docs"
   },
   "devDependencies": {
-    "sass": "^1.72.0",
-    "typescript": "^5.4.3",
+    "markdown-it-mark": "^4.0.0",
+    "markdown-it-mathjax3": "^4.3.2",
+    "markdown-it-sub": "^2.0.0",
+    "markdown-it-sup": "^2.0.0",
+    "sass": "^1.74.1",
+    "typescript": "^5.4.4",
     "vitepress": "1.0.0-rc.34",
     "vitepress-plugin-google-analytics": "^1.0.2"
   },

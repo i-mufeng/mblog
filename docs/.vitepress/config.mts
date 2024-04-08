@@ -2,6 +2,9 @@ import {defineConfig} from '@sugarat/theme/node'
 import {blogTheme} from './blog-theme'
 
 import timeline from "vitepress-markdown-timeline";
+import mdItSub from "markdown-it-sub"
+import mdItSup from "markdown-it-sup"
+import mdItMark from "markdown-it-mark"
 // Vitepress 默认配置
 // 详见文档：https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -92,12 +95,16 @@ export default defineConfig({
         }
     },
     markdown: {
+        math: true,
         config: (md) => {
             md.use(timeline)
+            md.use(mdItSub)
+            md.use(mdItSup)
+            md.use(mdItMark)
         }
     },
     sitemap: {
         hostname: 'https://www.imufeng.cn'
     },
 
-})
+});
