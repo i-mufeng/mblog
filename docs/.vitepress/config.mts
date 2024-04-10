@@ -5,6 +5,7 @@ import timeline from "vitepress-markdown-timeline";
 import mdItSub from "markdown-it-sub"
 import mdItSup from "markdown-it-sup"
 import mdItMark from "markdown-it-mark"
+import {chineseSearchOptimize, pagefindPlugin} from "vitepress-plugin-pagefind";
 // Vitepress 默认配置
 // 详见文档：https://vitepress.dev/reference/site-config
 export default defineConfig({
