@@ -31,13 +31,13 @@ html.dark {
   border-radius: .8rem !important;
 }
 
-main {
-  p {
-    &:not(li p):not(blockquote p):not(.VPTeamMembersItem p) {
-      text-indent: 2em; // 排除li标签下的p标签以及只含有strong标签的p标签
-    }
-  }
-}
+//main {
+//  p {
+//    &:not(li p):not(blockquote p):not(.VPTeamMembersItem p) {
+//      text-indent: 2em; // 排除li标签下的p标签
+//    }
+//  }
+//}
 :root {
   //...
   --vp-c-brand: var(--vp-c-brand-1);
