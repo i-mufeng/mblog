@@ -29,7 +29,15 @@ export default defineConfig({
         optimizeDeps: {
             include: ['element-plus'],
             exclude: ['@sugarat/theme']
-        }
+        },
+        // 使用插件加载
+        plugins: [pagefindPlugin({
+            customSearchQuery: chineseSearchOptimize,
+            btnPlaceholder: '搜索',
+            placeholder: '搜索文档',
+            emptyText: '空空如也',
+            heading: '共: {{searchResult}} 条结果'
+        })],
     },
     lastUpdated: true,
     themeConfig: {
