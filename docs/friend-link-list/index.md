@@ -49,14 +49,6 @@ sidebar: false
     ];
 const friends = [
       {
-        avatar: 'https://cdn.imufeng.cn/mblog/manggo.jpg',
-        name: 'Manggo\'s Zone',
-        title: '前端交流技术分享',
-        links: [
-          { icon: {svg: webSiteSvg}, link: 'https://www.manggo.cn/' },
-        ]
-      },
-      {
         avatar: 'https://sugarat.top/logo.png',
         name: '粥里有勺糖',
         title: '你的指尖,拥有改变世界的力量',
