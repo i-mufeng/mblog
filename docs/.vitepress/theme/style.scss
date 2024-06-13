@@ -3,6 +3,10 @@ html {
 }
 html.dark {
   --mf-bg-url: url(assets/bg-dark.webp);
+
+  .cover-img {
+    filter: contrast(60%);
+  }
 }
 
 .VPHome {
