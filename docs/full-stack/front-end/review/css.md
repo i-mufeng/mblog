@@ -1,7 +1,5 @@
 ---
-top: 1
 title: CSS 复习
-sticky: 10
 categories:
   - CSS 复习
 outline: [ 2,3 ]
