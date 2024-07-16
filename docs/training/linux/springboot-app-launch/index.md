@@ -50,3 +50,4 @@ Linux 服务器，其重要性不言而喻，本系列将从各个服务的安�
 
 1. [WEB 服务器 Nginx 编译安装](./nginx.md)
 2. [Mysql 数据库编译安装](./mysql.md)
+3. [Redis 缓存中间件编译安装](./redis.md)
