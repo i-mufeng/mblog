@@ -161,7 +161,7 @@ Mysql 服务启动后，即可进行连接：`./mysql -uroot -ppassWord`
 
 以下命令修改密码：
 
-```sql
+```mysql
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PASSWORD';
 ```
 
@@ -169,4 +169,3 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PASSWORD
 
 - [MySQL 教程 | 菜鸟教程 (runoob.com)](https://www.runoob.com/mysql/mysql-tutorial.html)
 - [MySQL 8 Build Options](https://dev.mysql.com/doc/mysqld-version-reference/en/build-options.html) 
-
