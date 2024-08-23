@@ -78,8 +78,8 @@ export default defineConfig({
             {
                 text: '面试分享',
                 items: [
-                    {text: '每日一题', link: '/interview/question-by-day/'},
-                    {text: '面试分享', link: '/interview/skills/'},
+                    {text: '面试刷题', link: '/interview/question-by-day/'},
+                    {text: '面经分享', link: '/interview/skills/'},
                 ]
             },
             {
