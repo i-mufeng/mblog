@@ -12,7 +12,7 @@ export default defineConfig({
     // 继承博客主题配置
     extends: blogTheme,
     lang: 'zh-cn',
-    title: 'MBlog',
+    title: 'Mblog - 沐风的个人空间',
     description: '沐风的个人空间',
     head: [
         ['script', {},
