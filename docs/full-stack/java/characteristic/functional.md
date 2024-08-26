@@ -1,7 +1,7 @@
 ---
 description: Lambda 表达式、Stream 流、Optional 类操作分享。
 tags:
-    - Java
+    - JAVA
 category: JAVA 学习笔记
 cover: false
 sticky: 3
@@ -180,4 +180,3 @@ Optional<People> people1 = Optional.of(people);
 ### 方法引用
 
 `类名/对象名::方法名`
-
