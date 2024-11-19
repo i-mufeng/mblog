@@ -24,10 +24,6 @@ cover: https://cdn.imufeng.cn/mblog/202411161415899.jpg
 
 我们将使用五台 Vmware 环境下的 AlmaLinux9.4 操作系统作为演示环境，讨论分布式大数据和微服务架构的搭建和部署，包括 Hadoop、Zookeeper等。
 
-![](https://cdn.imufeng.cn/mblog/202411161415899.jpg)
-
-
-
 ### 目录
 
 - [第一章 分布式大数据及微服务架构概述](./overview.md)
