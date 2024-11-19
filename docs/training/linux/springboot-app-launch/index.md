@@ -1,5 +1,5 @@
 ---
-top: 2
+top: -2
 title: SpringBoot 企业级部署上线流程
 description: 本系列将从 Linux 企业级运维的角度出发，详细介绍 Linux 操作系统下 Nginx + JAVA + MYSQL + Redis + Minio 的安装部署，主要使用编译安装。
 sticky: 10
