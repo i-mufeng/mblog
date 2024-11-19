@@ -1,19 +1,20 @@
 ---
-title: Hadoop 分布式数据库集群部署
+title: 第三章 Hadoop集群部署
 description: 本文将介绍 Hadoop 分布式数据库并五台服务器上部署和搭建 Hadoop 集群，包含 HDFS、YARN、MapReduce 的基本配置。
 categories:
   - Linux 分布式集群
 outline: [ 2,3 ]
-date: 2024-10-19
+date: 2024-10-28
+recommend: 3
 tags:
   - 运维
-  - 微服务
   - 分布式
   - Linux
+  - Hadoop
 head:
   - - meta
     - name: keywords
-      content: Linux企业级运维, 分布式, 微服务, Linux, 云原生, Kubernetes, AlmaLinux, 架构
+      content: Linux企业级运维, 分布式, Linux, AlmaLinux, 架构, Hadoop, 大数据
 cover: https://cdn.imufeng.cn/mblog/202411161444264.png
 ---
 # Hadoop 分布式数据库集群部署
@@ -34,21 +35,17 @@ Namenode 负责维护文件系统的名字空间，任何对文件系统名字�
 
 ![HDFS 架构](https://cdn.imufeng.cn/mblog/202411151428585.gif)
 
-
-
-
-
 ## 二、环境规划
 
 各节点规划如下：其中 Master01 作为 NameNode、ResourceManager ，Master02 用于分担 SecondaryNameNode 的角色，同时它们也作为一个普通节点，运行 DataNode 以及 NodeManager。
 
-| 节点     | 角色                                                         |
-| -------- | ------------------------------------------------------------ |
+| 节点       | 角色                                                     |
+|----------|--------------------------------------------------------|
 | Master01 | NameNode \| ResourceManager \| NodeManager \| DataNode |
-| Master02 | SecondaryNameNode \| NodeManager \| DataNode             |
-| Node01   | NodeManager \| DataNode                                    |
-| Node02   | NodeManager \| DataNode                                    |
-| Node03   | NodeManager \| DataNode                                    |
+| Master02 | SecondaryNameNode \| NodeManager \| DataNode           |
+| Node01   | NodeManager \| DataNode                                |
+| Node02   | NodeManager \| DataNode                                |
+| Node03   | NodeManager \| DataNode                                |
 
 ## 三、集群部署
 
