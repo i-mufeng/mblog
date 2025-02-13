@@ -17,6 +17,8 @@ author: false
 
 [WordPress 容器化部署](./wordpress-by-docker-compose.md)
 
+ [Linux 网络传输工具：curl VS wget](./curl-wget.md)
+
 
 
 ### Linux 企业级运维
