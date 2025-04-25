@@ -27,3 +27,4 @@ author: false
 
 【专栏】[SpringBoot 项目上线部署流程](./springboot-app-launch/)
 
+[Linux 磁盘管理 - 记一次分区格式化](./disk-management.md)

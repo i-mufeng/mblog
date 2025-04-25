@@ -10,7 +10,7 @@
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
     "@sugarat/theme": "^0.5.4",
-    "element-plus": "^2.9.7",
+    "element-plus": "^2.9.8",
     "markdown-it": "^14.1.0",
     "pagefind": "^1.3.0",
     "vitepress-markdown-timeline": "^1.2.2",
@@ -25,8 +25,8 @@
     "markdown-it-mathjax3": "^4.3.2",
     "markdown-it-sub": "^2.0.0",
     "markdown-it-sup": "^2.0.0",
-    "sass": "^1.86.0",
-    "typescript": "^5.8.2",
+    "sass": "^1.87.0",
+    "typescript": "^5.8.3",
     "vitepress": "1.6.3",
     "vitepress-plugin-google-analytics": "^1.0.2"
   },
