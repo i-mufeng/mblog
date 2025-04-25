@@ -334,6 +334,8 @@ UUID=f89a0677-c2ec-486e-9e68-808c14cc447e /boot    xfs     defaults        0 0
 
 ## 二、开始操作
 
+### 2.1 分区操作
+
 1. 使用 parted 进行分区操作。
 
    ```text
@@ -380,39 +382,43 @@ UUID=f89a0677-c2ec-486e-9e68-808c14cc447e /boot    xfs     defaults        0 0
    Information: You may need to update /etc/fstab.
    ```
 
-7. 开始分区
 
-   ```
-   [root@mufeng mufeng]# mkfs.xfs /dev/vdb1 
-   meta-data=/dev/vdb1              isize=512    agcount=4, agsize=19660736 blks
-            =                       sectsz=512   attr=2, projid32bit=1
-            =                       crc=1        finobt=1, sparse=1, rmapbt=0
-            =                       reflink=1    bigtime=1 inobtcount=1 nrext64=0
-   data     =                       bsize=4096   blocks=78642944, imaxpct=25
-            =                       sunit=0      swidth=0 blks
-   naming   =version 2              bsize=4096   ascii-ci=0, ftype=1
-   log      =internal log           bsize=4096   blocks=38399, version=2
-            =                       sectsz=512   sunit=0 blks, lazy-count=1
-   realtime =none                   extsz=4096   blocks=0, rtextents=0
-   Discarding blocks...Done.
-   ```
 
-   ```
-   [root@mufeng mufeng]# mkfs.xfs /dev/vdb2
-   meta-data=/dev/vdb2              isize=512    agcount=4, agsize=45875136 blks
-            =                       sectsz=512   attr=2, projid32bit=1
-            =                       crc=1        finobt=1, sparse=1, rmapbt=0
-            =                       reflink=1    bigtime=1 inobtcount=1 nrext64=0
-   data     =                       bsize=4096   blocks=183500544, imaxpct=25
-            =                       sunit=0      swidth=0 blks
-   naming   =version 2              bsize=4096   ascii-ci=0, ftype=1
-   log      =internal log           bsize=4096   blocks=89599, version=2
-            =                       sectsz=512   sunit=0 blks, lazy-count=1
-   realtime =none                   extsz=4096   blocks=0, rtextents=0
-   Discarding blocks...Done.
-   ```
+### 2.2 分区格式化
 
-8. 挂载
+```
+[root@mufeng mufeng]# mkfs.xfs /dev/vdb1 
+meta-data=/dev/vdb1              isize=512    agcount=4, agsize=19660736 blks
+         =                       sectsz=512   attr=2, projid32bit=1
+         =                       crc=1        finobt=1, sparse=1, rmapbt=0
+         =                       reflink=1    bigtime=1 inobtcount=1 nrext64=0
+data     =                       bsize=4096   blocks=78642944, imaxpct=25
+         =                       sunit=0      swidth=0 blks
+naming   =version 2              bsize=4096   ascii-ci=0, ftype=1
+log      =internal log           bsize=4096   blocks=38399, version=2
+         =                       sectsz=512   sunit=0 blks, lazy-count=1
+realtime =none                   extsz=4096   blocks=0, rtextents=0
+Discarding blocks...Done.
+```
+
+```
+[root@mufeng mufeng]# mkfs.xfs /dev/vdb2
+meta-data=/dev/vdb2              isize=512    agcount=4, agsize=45875136 blks
+         =                       sectsz=512   attr=2, projid32bit=1
+         =                       crc=1        finobt=1, sparse=1, rmapbt=0
+         =                       reflink=1    bigtime=1 inobtcount=1 nrext64=0
+data     =                       bsize=4096   blocks=183500544, imaxpct=25
+         =                       sunit=0      swidth=0 blks
+naming   =version 2              bsize=4096   ascii-ci=0, ftype=1
+log      =internal log           bsize=4096   blocks=89599, version=2
+         =                       sectsz=512   sunit=0 blks, lazy-count=1
+realtime =none                   extsz=4096   blocks=0, rtextents=0
+Discarding blocks...Done.
+```
+
+### 2.3 挂载
+
+1. 挂载
 
    创建挂载点：批量创建
 
@@ -427,7 +433,7 @@ UUID=f89a0677-c2ec-486e-9e68-808c14cc447e /boot    xfs     defaults        0 0
    [root@mufeng mufeng]# mount /dev/vdb2 /mufeng/data/
    ```
 
-9. 查看磁盘 UUID
+2. 查看磁盘 UUID
 
    ```TEXT
    [root@mufeng mufeng]# blkid 
@@ -440,40 +446,40 @@ UUID=f89a0677-c2ec-486e-9e68-808c14cc447e /boot    xfs     defaults        0 0
    /dev/vdb1: UUID="5dc8d086-b972-4d86-93b9-7a5d8d45df26" TYPE="xfs" PARTLABEL="perimary" PARTUUID="f7340660-3a9c-449e-acf0-7feafdb678be"
    ```
 
-10. 编辑挂载表
+3. 编辑挂载表
 
-    ```
-    [root@mufeng mufeng]# vim /etc/fstab 
-    ```
+   ```
+   [root@mufeng mufeng]# vim /etc/fstab 
+   ```
 
-    ```
-    /dev/mapper/almalinux-root                      /                       xfs     defaults        0 0
-    UUID=f89a0677-c2ec-486e-9e68-808c14cc447e       /boot                   xfs     defaults        0 0
-    /dev/mapper/almalinux-swap                      none                    swap    defaults        0 0
-    UUID=5dc8d086-b972-4d86-93b9-7a5d8d45df26       /mufeng/service         xfs     defaults        0 0
-    UUID=71d3726a-61b8-4d2f-8be3-a3e0fe9f63da       /mufeng/data         xfs     defaults        0 0
-    ```
+   ```
+   /dev/mapper/almalinux-root                      /                       xfs     defaults        0 0
+   UUID=f89a0677-c2ec-486e-9e68-808c14cc447e       /boot                   xfs     defaults        0 0
+   /dev/mapper/almalinux-swap                      none                    swap    defaults        0 0
+   UUID=5dc8d086-b972-4d86-93b9-7a5d8d45df26       /mufeng/service         xfs     defaults        0 0
+   UUID=71d3726a-61b8-4d2f-8be3-a3e0fe9f63da       /mufeng/data         xfs     defaults        0 0
+   ```
 
-11. 执行挂载
+4. 执行挂载
 
-    ```
-    [root@mufeng mufeng]# mount -a
-    ```
+   ```
+   [root@mufeng mufeng]# mount -a
+   ```
 
-12. 查看结果
+### 2.4 查看结果
 
-    ```
-    [root@mufeng mufeng]# lsblk
-    NAME               MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
-    sr0                 11:0    1    2G  0 rom  
-    vda                252:0    0  100G  0 disk 
-    ├─vda1             252:1    0    1G  0 part /boot
-    └─vda2             252:2    0   99G  0 part 
-      ├─almalinux-root 253:0    0   89G  0 lvm  /
-      └─almalinux-swap 253:1    0   10G  0 lvm  [SWAP]
-    vdb                252:16   0 1000G  0 disk 
-    ├─vdb1             252:17   0  300G  0 part /mufeng/service
-    └─vdb2             252:18   0  700G  0 part /mufeng/data
-    ```
+```
+[root@mufeng mufeng]# lsblk
+NAME               MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+sr0                 11:0    1    2G  0 rom  
+vda                252:0    0  100G  0 disk 
+├─vda1             252:1    0    1G  0 part /boot
+└─vda2             252:2    0   99G  0 part 
+  ├─almalinux-root 253:0    0   89G  0 lvm  /
+  └─almalinux-swap 253:1    0   10G  0 lvm  [SWAP]
+vdb                252:16   0 1000G  0 disk 
+├─vdb1             252:17   0  300G  0 part /mufeng/service
+└─vdb2             252:18   0  700G  0 part /mufeng/data
+```
 
 至此，该磁盘的新建以及分区挂载操作完成！
