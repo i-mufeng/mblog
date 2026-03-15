@@ -14,7 +14,7 @@ tags:
 head:
   - - meta
     - name: keywords
-      content: Linux企业级运维, 分布式, Linux, AlmaLinux, 架构, Hadoop, 大数据
+      content: Linux企业级运维, 分布式, Linux, 架构, Hadoop, 大数据
 ---
 
 # 第一章 Hadoop 分布式大数据系统概述

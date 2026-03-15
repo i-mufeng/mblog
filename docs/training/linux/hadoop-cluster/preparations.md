@@ -14,7 +14,7 @@ tags:
 head:
   - - meta
     - name: keywords
-      content: Linux企业级运维, 分布式, 微服务, Linux, AlmaLinux, 架构
+      content: Linux企业级运维, 分布式, 微服务, Linux, 架构
 ---
 
 # 第二章 分布式环境准备

@@ -16,7 +16,7 @@ tags:
 head:
   - - meta
     - name: keywords
-      content: Linux企业级运维, 分布式, Linux, AlmaLinux, 架构, Hadoop, 大数据
+      content: Linux企业级运维, 分布式, Linux, 架构, Hadoop, 大数据
 cover: https://cdn.imufeng.cn/mblog/202411161415899.jpg
 ---
 
@@ -29,3 +29,5 @@ cover: https://cdn.imufeng.cn/mblog/202411161415899.jpg
 - [第一章 分布式大数据及微服务架构概述](./overview.md)
 - [第二章 分布式环境准备](./preparations.md)
 - [第三章 Hadoop 集群部署](./hadoop-install)
+- [第四章 Zookeeper 集群部署](./zookeeper-install)
+- [第五章 Hive 数据仓库部署](./hi)
