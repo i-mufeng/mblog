@@ -10,4 +10,4 @@ recommend: false
 
 ## 目录
 
-> 内容持续更新中，敬请期待...
+- [进程调度算法详解](./2025-07-30-process-scheduling.md)

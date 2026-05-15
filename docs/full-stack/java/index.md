@@ -22,3 +22,7 @@ recommend: false
 ### JAVA 特性分享
 
 - [Java8新特性详解](./characteristic/functional.md)
+
+### Spring Boot
+
+- [Spring Boot 统一异常处理最佳实践](./2025-04-10-springboot-exception-handling.md)
