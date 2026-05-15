@@ -11,28 +11,20 @@ env:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [latest]
 
     steps:
     - uses: actions/checkout@v4
       with:
         fetch-depth: 0
 
-    - name: Node.js 版本：${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-
-    - name: 安装 pnpm
-      run: npm install pnpm -g
+    - name: 安装 Bun
+      uses: oven-sh/setup-bun@v2
 
     - name: 安装依赖
-      run: pnpm install
+      run: bun install --frozen-lockfile
 
     - name: 打包
-      run: pnpm run build
+      run: bun run build
 
 #    - name: 构建 pagefind 索引
 #      run: npx pagefind --source docs/.vitepress/dist
