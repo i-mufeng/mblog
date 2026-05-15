@@ -8,7 +8,7 @@ tags:
    - 运维
    - 磁盘管理
 outline: [2,3]
-date: 2025-4-25 17:20:00
+date: 2025-04-25
 cover: https://cdn.imufeng.cn/mblog/2025/disk-management.png
 head:
   - - meta

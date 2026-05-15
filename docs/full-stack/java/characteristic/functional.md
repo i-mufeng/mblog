@@ -1,8 +1,10 @@
 ---
+title: Java8 新特性详解
 description: Lambda 表达式、Stream 流、Optional 类操作分享。
 tags:
     - JAVA
-category: JAVA 学习笔记
+categories:
+  - JAVA 学习笔记
 cover: false
 sticky: 3
 outline: [2,3]

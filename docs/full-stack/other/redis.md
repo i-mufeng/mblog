@@ -1,6 +1,7 @@
 ---
+title: Redis 自学笔记
 description: Redis 是一个开源（BSD许可）的，内存中的数据结构存储系统，它可以用作数据库、缓存和消息中间件。
-categories: 
+categories:
   - 技术笔记分享
 tags: 
    - Redis

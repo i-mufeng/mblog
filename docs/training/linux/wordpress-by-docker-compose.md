@@ -1,6 +1,7 @@
 ---
+title: 基于 Docker Compose 的 WordPress 环境部署
 description: 本文将带你快速了解 docker compose 安装部署 WordPress。
-categories: 
+categories:
    - 建站笔记
 tags: 
    - Linux

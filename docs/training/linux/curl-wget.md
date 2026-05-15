@@ -7,7 +7,7 @@ tags:
    - Linux
    - 运维
 outline: [2,3]
-date: 2025-02-13 17:30:00
+date: 2025-02-13
 head:
   - - meta
     - name: keywords

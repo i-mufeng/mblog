@@ -5,12 +5,11 @@ tags:
   - 运维
   - LAMP
 hidden: true
-category: Linux 运维
+categories:
+  - Linux 运维
 ---
 
-
 # 第一步 编译安装httpd服务器
-
 
 ## 1、安装前准备
 
@@ -24,7 +23,6 @@ category: Linux 运维
 
 [root@localhost app]# ls
 apr-1.6.5  apr-util-1.6.1  httpd-2.4.46  packages  pcre-8.42
-
 ```
 
 安装软件支持

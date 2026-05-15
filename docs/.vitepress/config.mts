@@ -53,7 +53,7 @@ export default defineConfig({
             {
                 text: '全栈开发',
                 items: [
-                    {text: '大前端', link: '/full-stack/front-end/'},
+                    {text: '前端', link: '/full-stack/front-end/'},
                     {text: 'JAVA', link: '/full-stack/java/'},
                     {text: 'RUST', link: '/full-stack/rust/'},
                     {text: '数据库', link: '/full-stack/database/'},
@@ -61,7 +61,7 @@ export default defineConfig({
                 ]
             },
             {
-                text: '计算机基础',
+                text: '理论知识',
                 items: [
                     {text: '计算机网络', link: '/computer-basics/network/'},
                     {text: '操作系统', link: '/computer-basics/operating-system/'},
@@ -71,8 +71,9 @@ export default defineConfig({
             {
                 text: '折腾日志',
                 items: [
-                    {text: 'Linux 企业级运维', link: '/training/linux/'},
-                    {text: '软件工具分享', link: '/training/software/'},
+                    {text: 'AI', link: '/training/ai/'},
+                    {text: 'Linux ', link: '/training/linux/'},
+                    {text: '软件工具', link: '/training/software/'},
                 ]
             },
             {

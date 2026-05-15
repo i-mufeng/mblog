@@ -47,7 +47,7 @@ const blogTheme = getThemeConfig({
   },
   footer: [
     {
-      message: "Mblog © 2021-2024 Created by 沐风",
+      message: "Mblog © 2021-2026 Created by 沐风",
       copyright: {
         message: "CC BY-NC-SA 4.0 国际许可协议",
         link: "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans/"

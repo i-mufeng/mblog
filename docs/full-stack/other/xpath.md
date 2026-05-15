@@ -1,6 +1,7 @@
 ---
+title: XPATH 自学笔记
 description: XPath 是一门在 XML 文档中查找信息的语言，用于在 XML 文档中通过元素和属性进行导航。
-categories: 
+categories:
   - 技术笔记分享
 tags: 
    - Xpath

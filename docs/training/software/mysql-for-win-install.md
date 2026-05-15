@@ -1,6 +1,7 @@
 ---
+title: Mysql for Windows 安装及初始化
 description: Mysql for Windows 安装及初始化。
-categories: 
+categories:
    - 教程分享
 tags: 
    - mysql

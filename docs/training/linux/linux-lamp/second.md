@@ -5,7 +5,8 @@ tags:
   - 运维
   - LAMP
 hidden: true
-category: Linux 运维
+categories:
+  - Linux 运维
 ---
 
 # 第二步 编译安装mariadb数据库环境

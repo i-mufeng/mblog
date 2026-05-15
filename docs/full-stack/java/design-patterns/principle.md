@@ -1,6 +1,7 @@
 ---
+title: 设计模式七大原则
 description: 设计模式有七大原则，它体现的是开发过程中的优雅，是一种艺术。遵循这些原则，就能写出更加优雅、灵活的代码结构。
-categories: 
+categories:
    - JAVA 学习笔记
 tags: 
    - JAVA

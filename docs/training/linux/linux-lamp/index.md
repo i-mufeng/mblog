@@ -4,7 +4,8 @@ tags:
   - 架构
   - 运维
   - LAMP
-category: Linux 运维
+categories:
+  - Linux 运维
 
 ---
 # LAMP 编译安装三部曲
